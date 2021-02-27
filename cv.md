@@ -38,3 +38,12 @@ function clone(obj) {
     return obj;
 }
 ```
+# Education
+**College of Business and Law** 
+  * **Technician Programmer (2012-2016)**
+
+**Belarusian State University of Informatics and Radioelectronics**
+  * **Software engineer (2018-2022)**
+
+# English level
+**Pre-Intermediate(A2)**
