@@ -16,7 +16,9 @@ I am therefore currently looking for a job or an internship as a front-end devel
 * HTML 5, CSS 3, BEM, SCSS
 * JS basics
 * Git as VCS
+
 # Code example:
+
 ```
 let animal = {
     name: "animal",
