@@ -16,3 +16,25 @@ I am therefore currently looking for a job or an internship as a front-end devel
 * HTML 5, CSS 3, BEM, SCSS
 * JS basics
 * Git as VCS
+# Code example:
+```
+let animal = {
+    name: "animal",
+    age: 10,
+    childs: ["child 1", "child 2"]
+};
+ 
+let cat = clone(animal);
+    cat.name = "cat";
+    cat.age = 5;
+cat.childs.push("child 3");
+ 
+console.log(cat.name, cat.age); // cat 5
+console.log(cat.childs); // [ 'child 1', 'child 2', 'child 3' ]
+console.log(animal.name, animal.age); // cat 5
+console.log(animal.childs); // [ 'child 1', 'child 2', 'child 3' ]
+
+function clone(obj) {
+    return obj;
+}
+```
