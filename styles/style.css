@@ -57,4 +57,7 @@ section {
     background-color:#808080;
     border-radius: 3px;
 }
-
+.code {
+    max-width: 100%;
+    height: auto;   
+}
