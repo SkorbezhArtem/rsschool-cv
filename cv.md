@@ -17,8 +17,7 @@ I am therefore currently looking for a job or an internship as a front-end devel
 * JS basics
 * Git as VCS
 
-# Code example:
-
+# Code example
 ```
 let animal = {
     name: "animal",
@@ -39,6 +38,7 @@ console.log(animal.childs); // [ 'child 1', 'child 2', 'child 3' ]
 function clone(obj) {
     return obj;
 }
+
 ```
 # Education
 **College of Business and Law** 
