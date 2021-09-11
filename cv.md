@@ -41,3 +41,17 @@ function clone(obj) {
     return obj;
 }
 ```
+# Courses
+* [CS50](https://javarush.ru/quests/QUEST_HARVARD_CS50)
+* [Learn JS](https://learn.javascript.ru/)
+* [Frontend course](https://www.udemy.com/course/front-end-javascript-react-redux/)
+
+# Education
+**College of Business and Law** 
+  * **Technician Programmer (2012-2016)**
+
+**Belarusian State University of Informatics and Radioelectronics**
+  * **Software engineer (2018-2022)**
+
+# English level
+**Pre-Intermediate(A2)**
