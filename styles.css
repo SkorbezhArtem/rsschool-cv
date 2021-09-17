@@ -26,8 +26,17 @@ a {
   text-decoration: none;
   color:rgb(0, 0, 0);
 }
+
 li {
   list-style-type: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+p { 
+  text-indent: 40px; 
 }
 .menu {
   height: 70px;
@@ -90,4 +99,93 @@ li {
   margin: 0 auto;
   border: 3px solid rgb(8, 75, 114);
   border-radius: 50%;
+}
+
+.contacts {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+
+.contacts-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.contacts-list {
+  margin: 0 auto;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-list-item {
+  margin-bottom: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fab, .fas { 
+  font-size: 70px;
+  transition: .4s;
+  margin: 0 auto;
+} 
+.contact-list-link {
+  transition: .4s;
+  margin: 0 auto;
+}
+.fab:hover, .fas:hover, .contact-list-link:hover {
+  cursor: pointer;
+  color: rgb(8, 75, 114);
+}
+
+
+.about {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+.about-container {
+  display: flex;
+}
+
+.about-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 30px;
+  padding: 0 15px;
+}
+.mark {
+  background-color: rgb(8, 75, 114, .6);
+}
+
+.skills {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+
+.skills-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.skills-list {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.skills-list__item {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.projects {
+  padding: 30px 0;
+}
+.projects-title {
+  font-size: 45px;
+  margin-bottom: 30px;
 }
