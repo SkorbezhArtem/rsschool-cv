@@ -189,3 +189,46 @@ p {
   font-size: 45px;
   margin-bottom: 30px;
 }
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.project-img {
+  width: 400px;
+  height: 200px;
+  transition: .4s;
+  filter: saturate(20%);
+  margin-bottom: 10px;
+}
+.project-img:hover {
+  filter: saturate(150%);
+  border-radius: 15px;
+}
+
+.project-title {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.project-link__code {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(8, 75, 114);
+  border: 3px solid rgb(8, 75, 114);
+  margin: 0 auto;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  transition: .4s;
+}
+
+.project-link__code:hover {
+  background-color: rgb(49, 80, 180);
+}
