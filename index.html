@@ -166,16 +166,22 @@
           <pre><code class="language-javascript">
             function revrot(str, sz) {
               const isEven = (v) =>
-                v.split('').reduce((cubeSum, d) => (cubeSum += d ** 3), 0) % 2 === 0;
+                v.split('')
+                .reduce((cubeSum, d) => 
+                (cubeSum += d ** 3), 0) % 2 === 0;
               const reverse = (v) => v
                   .split('')
                   .reverse()
                   .join('');
               
-              const rotate = (v) => v.slice(1) + v.slice(0, 1);
+              const rotate = (v) => 
+              v.slice(1) + v.slice(0, 1);
             
-              return (str.match(new RegExp(`.{${sz}}`, 'g')) || [])
-                .map((v) => (isEven(v) ? reverse(v) : rotate(v)))
+              return 
+              (str.match(new RegExp(`.{${sz}}`, 'g')) || [])
+                .map((v) => (isEven(v) 
+                ? reverse(v) 
+                : rotate(v)))
                 .join('');
             }
           </code></pre>
@@ -186,13 +192,22 @@
           <h2 class="courses-title">Courses</h2>
           <div class="courses-container">
             <div class="course-item">
-              <img src="./img/course-1.jpg" alt="JS + React course" class="course-item__img">
+              <h3 class="course-item__title">JavaScript + React by Ivan Petrichenko</h3>    
+              <a href="https://www.udemy.com/course/javascript_full/" target="_blank">
+                <img src="./img/course-1.jpg" alt="JS + React course" class="course-item__img">
+              </a>
             </div>
             <div class="course-item">
-              <img src="./img/course-3.jpg" alt="CS50" class="course-item__img">
+              <h3 class="course-item__title">CS50 Course</h3>    
+              <a href="https://javarush.ru/quests/QUEST_HARVARD_CS50" target="_blank">
+                <img src="./img/course-3.jpg" alt="CS50" class="course-item__img">
+              </a>
             </div>
             <div class="course-item">
-              <img src="./img/course-2.jpg" alt="Learn JS" class="course-item__img">
+              <h3 class="course-item__title">Learn JavaScript</h3>  
+              <a href="https://learn.javascript.ru/" target="_blank">
+                <img src="./img/course-2.jpg" alt="Learn JS" class="course-item__img">
+              </a>
             </div>
           </div>
         </div>
