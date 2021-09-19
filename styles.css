@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,9 +36,6 @@ h2 {
   text-align: center;
 }
 
-p { 
-  text-indent: 40px; 
-}
 .menu {
   height: 70px;
 }
@@ -46,6 +44,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .menu-list__item {
   align-items: center;
@@ -74,11 +73,12 @@ p {
   border-bottom: 3px solid rgb(8, 75, 114);
   padding: 100px 0;
   background: no-repeat url('./img/home-bg.jpg');
-  background-size: 100% auto;
+  background-size: cover;
+  max-width: 100%;
 }
 
 .home-text {
-  width: 420px;
+  max-width: 420px;
   margin: 0 auto;
   color: #fff;
 }
@@ -118,6 +118,7 @@ p {
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact-list-item {
@@ -174,16 +175,19 @@ p {
 }
 .skills-list {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .skills-list__item {
   font-size: 30px;
   display: flex;
   flex-direction: column;
+  margin: 15px;
 }
 .projects {
   padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
 }
 .projects-title {
   font-size: 45px;
@@ -191,15 +195,21 @@ p {
 }
 
 .project-container {
+  max-width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 15px;
 }
 .project {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
 }
+
 .project-img {
-  width: 400px;
+  width: 350px;
   height: 200px;
   transition: .4s;
   filter: saturate(20%);
@@ -231,4 +241,189 @@ p {
 
 .project-link__code:hover {
   background-color: rgb(49, 80, 180);
+}
+
+.code {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+
+.code-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.language-javascript {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.courses {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+
+.courses-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.courses-container {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.course-item {
+  width: 400px;
+  height: 250px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  margin: 15px;
+}
+.course-item__img {
+  width: 100%;
+  height: 100%;
+  transition: .4s;
+}
+.course-item__img:hover {
+  filter:saturate(200%);
+}
+.education {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+
+.education-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.education-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.education-item {
+  text-transform: capitalize;
+  width: 300px;
+  height: 200px;
+  background-color: rgba(8, 75, 114, .8);
+  text-align: center;
+  padding: 50px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.languages {
+  padding: 30px 0;
+  border-bottom: 3px solid rgb(8, 75, 114);
+}
+
+.languages-title {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.english {
+  padding: 0 0 0 50px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.russian {
+  padding: 0 0 0 50px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 20px 10px 20px 10px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-github-square {
+  color: #FFF;
+}
+.rss {
+	display: block;
+	position: relative;
+	width: 85px;
+	height: 70px;
+	background-image: url("./img/rss.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 111px;
+}
+.rss-year {
+	position: absolute;
+	bottom: 11px;
+	right: -25px;
+	font-size: 25px;
+	letter-spacing: -2px;
+	color: #ffffff;
+	line-height: 0.9;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.rss:hover .rss-year {
+	right: -30px;
+	letter-spacing: 0; 
+  color: rgb(8, 75, 114);
+}
+
+
+@media  (max-width: 700px) {
+  .language-javascript {
+    font-size: 10px;
+  }
+  .project {
+    margin: 0 auto;
+  }
+  .about-text {
+    font-size: 20px;
+  }
+}
+
+@media  (max-width: 400px) {
+  .home-title {
+    font-size: 30px;
+  }
+  .home-subtitle {
+    font-size: 15px;
+  }
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
+  .contacts-list {
+    font-size: 20px;
+    justify-content: center;
+  }
+  .skills-list {
+    font-size: 10px;
+    justify-content: center;
+  }
+  .language-javascript {
+    font-size: 7px;
+  }
+  .project {
+    margin-bottom: 25px;
+  }
+  .project-img {
+    width: 300px;
+    height: 160px;
+  }
 }
