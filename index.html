@@ -182,21 +182,21 @@
           <h2 class="code-title">Code example</h2>
           <pre><code class="language-javascript">
             function revrot(str, sz) {
-              const isEven = (v) =>
+              const isEven = (v) =&gt;
                 v.split('')
-                .reduce((cubeSum, d) => 
+                .reduce((cubeSum, d) =&gt; 
                 (cubeSum += d ** 3), 0) % 2 === 0;
-              const reverse = (v) => v
+              const reverse = (v) =&gt; v
                   .split('')
                   .reverse()
                   .join('');
               
-              const rotate = (v) => 
+              const rotate = (v) =&gt; 
               v.slice(1) + v.slice(0, 1);
             
               return 
               (str.match(new RegExp(`.{${sz}}`, 'g')) || [])
-                .map((v) => (isEven(v) 
+                .map((v) =&gt; (isEven(v) 
                 ? reverse(v) 
                 : rotate(v)))
                 .join('');
